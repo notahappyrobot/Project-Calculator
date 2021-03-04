@@ -1,0 +1,103 @@
+.calculator{
+    background-color: maroon;
+    border-radius: 5px;
+    
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.display{
+    background-color: green;
+    color: limegreen;
+    
+    
+}
+/* top row */
+#calculation{
+    grid-area: 1/ 1/ 1/ 5;
+}
+
+#answer{
+    grid-area: 2/ 1/ 2/ 5;
+}
+
+.numBtn{
+    background-color: grey;
+    width:40px;
+}
+/* row 7 8 9 + */
+
+#seven{
+    grid-area:3/1/3/1;
+}
+#eight{
+    grid-area:3/2/3/2;
+}
+#nine{
+    grid-area:3/3/3/3;
+}
+#add{
+    grid-area:3/4/3/4;
+}
+
+/* row 4 5 6 - */
+
+#four{
+    grid-area:4/1/4/1;
+}
+#five{
+    grid-area:4/2/4/2;
+}
+#six{
+    grid-area:4/3/4/3;
+}
+#subtract{
+    grid-area:4/4/4/4;
+}
+
+/* row 1 2 3 * */
+
+#one{
+    grid-area:5/1/5/1;
+}
+#two{
+    grid-area:5/2/5/2;
+}
+#three{
+    grid-area:5/3/5/3;
+}
+#multiply{
+    grid-area:5/4/5/4;
+}
+
+/* row  0 . = /  */
+
+#zero{
+    grid-area:6/1/6/1;
+}
+#decimal{
+    grid-area:6/2/6/2;
+}
+#equals{
+    grid-area:6/3/6/3;
+}
+#divide{
+    grid-area:6/4/6/4;
+}
+
+/* clear del  */
+
+#clear{
+    grid-area:7/1/7/1;
+}
+#del{
+    grid-area:7/2/7/2;
+}
+
+
+.calcBtn{
+    background-color: rgb(57, 130, 172);
+    width: 40px;
+}
