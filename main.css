@@ -1,31 +1,38 @@
 .calculator{
     background-color: maroon;
     border-radius: 5px;
-    
+    width: 50%;
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .display{
     background-color: green;
     color: limegreen;
-    
+    padding: 5px;
+    text-align: end;
+    width: 100%;
     
 }
 /* top row */
 #calculation{
-    grid-area: 1/ 1/ 1/ 5;
+    grid-area: 1/ 2/ 1/ 4;
+    
 }
 
 #answer{
-    grid-area: 2/ 1/ 2/ 5;
+    grid-area: 2/ 2/ 2/ 4;
 }
 
 .numBtn{
     background-color: grey;
     width:40px;
+    text-align: center;
 }
 /* row 7 8 9 + */
 
@@ -92,12 +99,12 @@
 #clear{
     grid-area:7/1/7/1;
 }
-#del{
+#delete{
     grid-area:7/2/7/2;
 }
-
 
 .calcBtn{
     background-color: rgb(57, 130, 172);
     width: 40px;
+    text-align: center;
 }
