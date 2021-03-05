@@ -9,6 +9,7 @@
     justify-items: center;
     align-items: center;
     justify-content: space-evenly;
+    padding: 5px;
 }
 
 .display{
@@ -16,17 +17,17 @@
     color: limegreen;
     padding: 5px;
     text-align: end;
-    width: 100%;
+    width: 80%;
     
 }
 /* top row */
 #calculation{
-    grid-area: 1/ 2/ 1/ 4;
+    grid-area: 1/ 1/ 1/ 5;
     
 }
 
 #answer{
-    grid-area: 2/ 2/ 2/ 4;
+    grid-area: 2/ 1/ 2/ 5;
 }
 
 .numBtn{
