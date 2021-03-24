@@ -31,19 +31,19 @@ let answer = ``; // display total
     }
 
 
-    // get numbers
+    // get numbers, numBtn interaction
     document.querySelectorAll('.numBtn').forEach(item => {
         item.addEventListener('click', event => {
-            
-            tempNum += event.target.textContent;
-            console.log(`${event.target.textContent} was pressed`);        
 
-          updateCalc(tempNum);
+            //tempNum += event.target.textContent;
+            console.log(`${event.target.textContent} was pressed`);             
+            
+            updateCalc(tempNum += event.target.textContent);
 
         })
       })
 
-    // get operator
+    // get operator, calcBtn interaction
     document.querySelectorAll('.calcBtn').forEach(item => {
         item.addEventListener('click', event => {
             console.log(`${event.target.textContent} was pressed`);
@@ -53,7 +53,8 @@ let answer = ``; // display total
                         a = tempNum;
                         
                         operator = event.target.textContent;
-                        updateCalc(event.target.textContent);
+                        calculation += operator;
+                        updateCalc(a + event.target.textContent);
                         console.log(`a = ${a}`);
 
                         break;
@@ -128,7 +129,7 @@ let answer = ``; // display total
     // update display calculation
     let dispCalc = document.getElementById("calculation");
     function updateCalc(calculation){
-        dispCalc.textContent += calculation;
+        dispCalc.textContent = calculation; // += produced duplicates
     }
     
     // update display answer
