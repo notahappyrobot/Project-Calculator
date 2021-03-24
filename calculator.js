@@ -5,8 +5,8 @@
 */
 
 // inputs
-let a = ``;
-let b = ``;
+let a = `0`;
+let b = `0`;
 let tempNum = ``;
 let operator = ``; // math operator add, subtract, multiple, divide
 
@@ -21,37 +21,35 @@ let answer = ``; // display total
 */
     // get first number (a)
     if(!a && !b){
-        console.error(`no variables have been declared`);
-        // set a
+
     }
     // after operator selected switch to variable b
     if(a && !b){
-        console.error(`"a" has been declared, but "b" has NOT`);
-        // set b
+
     }
 
 
     // get numbers, numBtn interaction
     document.querySelectorAll('.numBtn').forEach(item => {
         item.addEventListener('click', event => {
-
-            //tempNum += event.target.textContent;
-            console.log(`${event.target.textContent} was pressed`);             
             
+            console.log(`${event.target.textContent} was pressed`);         
             updateCalc(tempNum += event.target.textContent);
 
+            dataTracker(); //updates a, b and operator
         })
       })
 
     // get operator, calcBtn interaction
     document.querySelectorAll('.calcBtn').forEach(item => {
         item.addEventListener('click', event => {
+            
             console.log(`${event.target.textContent} was pressed`);
             if(operator === ``){
+                a = tempNum;
                 switch(event.target.textContent){
                     case `+`:
-                        a = tempNum;
-                        
+                                                
                         operator = event.target.textContent;
                         calculation += operator;
                         updateCalc(a + event.target.textContent);
@@ -60,21 +58,21 @@ let answer = ``; // display total
                         break;
 
                     case `-`:
-                        a = tempNum;
+                        
                         operator = event.target.textContent;
                         updateCalc(event.target.textContent);
 
                         break;
 
                     case `/`:
-                        a = tempNum;
+                        
                         operator = event.target.textContent;
                         updateCalc(event.target.textContent);
 
                         break;
 
                     case `*`:
-                        a = tempNum;
+                        
                         operator = event.target.textContent;
                         updateCalc(event.target.textContent);
 
@@ -115,7 +113,7 @@ let answer = ``; // display total
                 }
             }
 
-
+            dataTracker(); //updates a, b and operator
       })
     })
     // get second number (b)
