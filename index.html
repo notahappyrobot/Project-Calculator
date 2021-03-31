@@ -1,48 +1,46 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-  <title>Project Calculator</title>
-  <!-- <link rel="stylesheet" href="main.css"> -->
-</head>
+    <title>Project: Calculator</title>
+    <link rel="stylesheet" href="main_v2.css">
+  </head>
 
-<body>
+  <body>
 
-    <div class="calculator">
-      <button class="numBtn"id="one">1</button>
-      <button class="numBtn"id="two">2</button>
-      <button class="numBtn"id="three">3</button>
-      <button class="numBtn"id="four">4</button>
-      <button class="numBtn"id="five">5</button>
-      <button class="numBtn"id="six">6</button>
-      <button class="numBtn"id="seven">7</button>
-      <button class="numBtn"id="eight">8</button>
-      <button class="numBtn"id="nine">9</button>
-      <button class="numBtn"id="zero">0</button>      
+      <div class="calculator">
+        <button class="numBtn"id="one">1</button>
+        <button class="numBtn"id="two">2</button>
+        <button class="numBtn"id="three">3</button>
+        <button class="numBtn"id="four">4</button>
+        <button class="numBtn"id="five">5</button>
+        <button class="numBtn"id="six">6</button>
+        <button class="numBtn"id="seven">7</button>
+        <button class="numBtn"id="eight">8</button>
+        <button class="numBtn"id="nine">9</button>
+        <button class="numBtn"id="zero">0</button>          
+        <button class="deciBtn"id="decimal">.</button>
+        <button class="mathOpBtn"id="add">+</button>
+        <button class="mathOpBtn"id="subtract">-</button>
+        <button class="mathOpBtn"id="multiply">*</button>
+        <button class="mathOpBtn"id="divide">/</button>
+        <button class="equalsBtn"id="equals">=</button>
+        <button id="clrBtn">clr</button>
+        <button id="delBtn"> 	
+          &#129044 del</button>    
+        <h3 id="outCalc">Calculation : </h3>
+        <h3 id="outTotal">Total : </h3>
+      </div>
       <hr>
-      <button class="deciBtn"id="decimal">.</button>
-      <hr>
-      <button class="mathOpBtn"id="add">+</button>
-      <button class="mathOpBtn"id="subtract">-</button>
-      <button class="mathOpBtn"id="multiply">*</button>
-      <button class="mathOpBtn"id="divide">/</button>
-      <hr>
-      <button class="equalsBtn"id="equals">=</button>
-      <hr>
-      <button id="clrBtn">clr</button>
-      <button id="delBtn">del</button>
-      <hr>      
-      <h3 id="outA">A : </h3> 
-      <h3 id="outMathOp">mathOp : </h3>
-      <h3 id="outB">B : </h3>
-      <br>
-      <h3 id="outCalc">Calculation : </h3>
-      <h3 id="outTotal">Total : </h3>
-    </div>
+      <div>
+        <h3 id="outA">A : </h3> 
+        <h3 id="outMathOp">mathOp : </h3>
+        <h3 id="outB">B : </h3>
+      </div>
 
 
-  <script src="calc_v2.js"></script>
-</body>
+    <script src="calc_v2.js"></script>
+  </body>
 </html>
